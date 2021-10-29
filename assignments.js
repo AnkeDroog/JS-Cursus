@@ -51,11 +51,37 @@
 // console.log(percNetherlands2, percGermany2, percBrazil2);
 
 // LECTURE ARROW FUNCTIONS
-const percentageOfWorld3 = population => (population / 7900) * 100;
-const percNetherlands3 = percentageOfWorld3(17);
-const percGermany3 = percentageOfWorld3(83);
-const percBrazil3 = percentageOfWorld3(212);
+// const percentageOfWorld3 = population => (population / 7900) * 100;
+// const percNetherlands3 = percentageOfWorld3(17);
+// const percGermany3 = percentageOfWorld3(83);
+// const percBrazil3 = percentageOfWorld3(212);
 
-console.log(percNetherlands3, percGermany3, percBrazil3);
+// console.log(percNetherlands3, percGermany3, percBrazil3);
+
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
+
+console.log(scoreDolphins, scoreKoalas);
+
+function checkwinner(AvgDolphins, AvgKoalas) {
+    if (AvgDolphins >= 2 * AvgKoalas) {
+        console.log(`Dolphins win (${AvgDolphins} vs ${AvgKoalas})!! 🎉`)
+    } else if (AvgKoalas >= 2 * AvgDolphins) {
+        console.log(`Koalas win (${AvgKoalas} vs ${AvgDolphins})!!🎉`)
+    } else {
+        console.log('There is no winner...')
+    }
+}
+
+checkwinner(scoreDolphins, scoreKoalas); //data 1
+
+// data 2
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
+checkwinner(scoreDolphins, scoreKoalas); //data 2
 
 
