@@ -81,6 +81,4 @@
 // console.log(yearsUntilRetirement(1991, 'Jonas'));
 // console.log(yearsUntilRetirement(1950, 'Mike'));
 
-const age = 29;
-const name = Anke;
 
